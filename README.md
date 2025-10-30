@@ -1,3 +1,12 @@
+## 👨‍💻 Developers
+
+| <img src="https://avatars.githubusercontent.com/u/197270758?v=4" width=100> | <img src="https://avatars.githubusercontent.com/u/227333566?v=4" width=100>
+| :------------------------------------------------------------------------: | :-------------------------------------------------------------------------: |
+|                   [김민호](https://github.com/minho0805)                   |                  [민경빈](https://github.com/03-MKB)                   |        
+
+<br>
+
+
 ## 🎯 Git Convention
 
 | 이모지 | 타입 | 설명 |
@@ -37,8 +46,8 @@
 
 - `main` : 배포 가능한 브랜치, 항상 배포 가능한 상태를 유지
 - `develop` : 개발 중 사용할 브랜치
-- `feature/{description}` : 새로운 기능을 개발하는 브랜치
-    - 예: `feature/add-login-page`
+- `feature/{name}/{description}` : 새로운 기능을 개발하는 브랜치
+    - 예: `feature/minho/login-logout-signup`
 
 <br>
 
@@ -55,12 +64,12 @@
 #### 예시:
 ```bash
 # 새로운 기능 개발 브랜치 생성
-git checkout -b feature/기능명
+git checkout -b feature/minho/login-logout-signup
 
 # 작업 후 커밋 & 원격 저장소에 푸시
 git add .
-git commit -m "✨ Feat: 기능 설명"
-git push origin feature/기능명
+git commit -m "✨ Feat: 로그인/로그아웃/회원가입"
+git push origin feature/minho/login-logout-signup
 
 # ➡️ GitHub에서 PR(Pull Request) 생성
 #    base: develop ← compare: feature/기능명
